@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.admin {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f0f4f8;
+  font-family: "Amiri", serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #333;
+}
+
+.finshButton button {
+  padding: 12px 24px; 
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #e53935;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.navbar {
+  width: 100%;
+  max-width: 1300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background-color: #ffffff;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-bottom: 20px; 
+}
+
+.icon {
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.icon a {
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon svg {
+  margin-right: 8px;
+  color: #1976d2;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.appointment {
+  width: 100%;
+  max-width: 1300px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 20px; 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  overflow-y: auto;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  overflow-y: auto;
+}
+
+.addAppointment {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 15px;
+}
+
+.addAppointment input,
+.addAppointment select {
+  padding: 10px ;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: border-color 0.3s ease;
+}
+
+.addAppointment button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #1976d2;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.addAppointment input:focus,
+.addAppointment select:focus {
+  border-color: #1976d2;
+  outline: none;
+}
+/* /////////////// */
+.showAppointment {
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+}
+  
+.left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex: 2;
+  padding-right: 5px;
+}
+
+.index {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #444;
+  display: flex;
+  align-items:flex-start ;
+  justify-content: center;
+}
+
+.customerData {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 1rem;
+  flex: 2;
+}
+
+.customerData div {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px; 
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.customerData div p {
+  margin: 0;
+  font-size: 1rem;
+  color: #888;
+  
+}
+
+.customerData div h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.icons div:last-child {
+  color: #ff4d4d;
+}
+
+
+.doneCard {
+  color: green;
+  border: 1px solid darkgreen;
+  text-decoration: line-through red;
+  opacity: 0.8;
+  background-color: #e1fae9; 
+  transition: all 0.3s ease;
+}
+.message{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width : 768px) {
+
+  .navbar {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .info {
+    gap: 0;
+  }
+  .icon , .navbar h1 {
+    font-size: 1.2rem;
+  }
+  .status span svg {
+    margin-left: 5px;
+    width: 24px; 
+    height: 24px; 
+  }
+  .navbar h3 {
+    margin-right: 5px;
+    font-size: 0.8rem;
+    color: #777;
+  }
+ 
+  .addAppointment{
+    flex-direction: column;
+    padding: 0  10px;
+  }
+  .showAppointment {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 0;
+  }
+  .card{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .icons{
+    flex-direction: row;
+  }
+  .left{
+    width: 100%;
+  }
+
+  .customerData div {
+    padding: 8px;
+  }
+  .customerData div p , .customerData div h3 , .index{
+    font-size: 1rem;
+  }
+}
+@media (max-width : 500px) {
+  .left{
+    width: 100%;
+  }
+  .customerData {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+  .addAppointment input,
+.addAppointment select{
+  padding: 5px;
+}
+}
+
+
+
+
