@@ -7,7 +7,7 @@ import { doc, getDoc, setDoc, updateDoc, arrayUnion } from "firebase/firestore";
 import { db } from "@/app/firebase";
 import Image from "next/image";
 
-export const RenderForm = ({ toggleForm, barberId , setRefreshData }) => {
+export const RenderForm = ({ toggleForm, barberId  }) => {
   const [date, setDate] = useState(new Date());
   const [time, setTime] = useState("");
   const [customerName, setCustomerName] = useState("");

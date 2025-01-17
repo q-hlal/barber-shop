@@ -3,12 +3,12 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCp_o9UWJ-YMB11FU81lsysMqWZbdgo3Fc",
-  authDomain: "barber-shop-21d6a.firebaseapp.com",
-  projectId: "barber-shop-21d6a",
-  storageBucket: "barber-shop-21d6a.firebasestorage.app",
-  messagingSenderId: "503840517830",
-  appId: "1:503840517830:web:7aa3f4a2f6da5e67a771c7"
+  apiKey: process.env.NEXT_PUBLIC_API_KEY,
+  authDomain: process.env.NEXT_PUBLIC_AUTH_DOMAIN,
+  projectId: process.env.NEXT_PUBLIC_PROJECT_ID,
+  storageBucket: process.env.NEXT_PUBLIC_STORAGE_BUCKETS,
+  messagingSenderId: process.env.NEXT_PUBLIC_MESSAGING_SENDER_ID,
+  appId: process.env.NEXT_PUBLIC_APP_Id
 };
 
  export const  app = initializeApp(firebaseConfig);

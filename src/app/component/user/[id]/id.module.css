@@ -9,6 +9,7 @@
     font-weight: 700;
     font-style: normal;
     height: calc(100vh - 3vh);
+    overflow: hidden;
   }
 
   
@@ -113,6 +114,7 @@
     margin: 5px ;
     display: inline-block;
     border: 1px solid black;
+    border-radius: 3px;
   }
 
   .shaveTypes li span {
