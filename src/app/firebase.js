@@ -8,7 +8,7 @@ const firebaseConfig = {
   projectId: process.env.NEXT_PUBLIC_PROJECT_ID,
   storageBucket: process.env.NEXT_PUBLIC_STORAGE_BUCKETS,
   messagingSenderId: process.env.NEXT_PUBLIC_MESSAGING_SENDER_ID,
-  appId: process.env.NEXT_PUBLIC_APP_Id
+  appId: process.env.NEXT_PUBLIC_APP_ID
 };
 
  export const  app = initializeApp(firebaseConfig);
