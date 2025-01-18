@@ -128,9 +128,9 @@ export const RenderForm = ({ toggleForm, barberId  }) => {
               <option value="vip shave">حلاقه VIP</option>
             </select>
             <div className={styles.buttons}>
-              <button type="submit">Submit</button>
+              <button type="submit">تأكيد الموعد</button>
               <button type="button" onClick={() => toggleForm(false)}>
-                Cancel
+                الغاء الموعد
               </button>
             </div>
           </form>

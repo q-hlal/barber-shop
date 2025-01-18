@@ -27,8 +27,10 @@
 
 .message{
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
+  color: black;
+  margin-top: 3px;
 }
 
 .finshButton {
@@ -66,6 +68,7 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
+
 }
 
 .input input,
@@ -75,6 +78,8 @@
   font-size: 1rem;
   border: 1px solid #ddd;
   border-radius: 5px;
+  background-color: white;
+  color: black;
   box-sizing: border-box;
 }
 
@@ -88,6 +93,7 @@
 }
 .shaveinfo h3{
   text-align: center;
+  color: black;
 }
 
 .shaveinfo input {
@@ -211,19 +217,17 @@
   }
 
   .input input,
+  .input select,
   .shaveinfo input,
   .saveButton button {
     font-size: 0.9rem;
-    padding: 8px 10px;
+    padding: 6px 10px;
   }
 
   .saveButton button{
     margin-top: 5px;
   }
-  .message {
-    margin-top: 10px;
-    text-align: center;
-  }
+
 }
 @media (max-width : 400px) {
   .input input,

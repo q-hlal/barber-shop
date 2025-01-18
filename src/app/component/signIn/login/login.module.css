@@ -47,6 +47,7 @@
   .input {
     padding: 10px 15px;
     font-size: 1rem;
+    background-color: white;
     border: 1px solid #ccc;
     border-radius: 8px;
     transition: border-color 0.3s ease-in-out;
@@ -89,4 +90,5 @@
   }
   .message{
     padding-top: 15px;
+    color: black;
   }

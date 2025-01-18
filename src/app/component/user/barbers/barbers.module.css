@@ -21,8 +21,9 @@
 
 .container input {
   width: 90%;
-  padding: 8px;
+  padding: 10px;
   border: 1px solid lightgray;
+  background-color: white;
   border-radius: 5px;
   margin-bottom: 10px;
 }
@@ -91,6 +92,7 @@
 
 .cardBody a{
   transition: transform 0.3s ease;
+  color: black;
 }
 
 .cardBody a:hover{

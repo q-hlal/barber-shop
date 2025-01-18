@@ -70,6 +70,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    color: black;
   }
 
   .detail span {
@@ -94,7 +95,7 @@
     align-items: center;
     justify-content: flex-start;
     background-color: rgba(242, 230, 255, 0.2);
-    border-bottom: 1px solid lightgray;
+    color: black;
   }
   
   .shaveTypes h1 {

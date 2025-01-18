@@ -187,7 +187,6 @@ const Admin = () => {
             />
             <input
               type="time"
-              placeholder="أدخل الوقت"
               value={time}
               onChange={(e) => setTime(e.target.value)}
               required
