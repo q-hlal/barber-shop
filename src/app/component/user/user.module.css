@@ -40,6 +40,7 @@
     padding: 10px;
     border: 1px solid #ddd;
     background-color: white;
+    color: black;
     border-radius: 8px;
     font-size: 14px;
     outline: none;
@@ -400,6 +401,9 @@
     .customerInfo{
         flex-direction: column;
         gap: 12px;
+    }
+    .addform{
+        width: 100%;
     }
     .addform input  , .addform select{
        margin: 8px 0;
