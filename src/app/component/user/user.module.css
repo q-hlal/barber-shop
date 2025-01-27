@@ -281,6 +281,7 @@
     border: 1px solid #ccc;
     border-radius: 4px;
     background-color: white;
+    color: black;
 }
 .detail {
     width: 100% !important;
@@ -404,6 +405,7 @@
     }
     .addform{
         width: 100%;
+        max-width: 90%;
     }
     .addform input  , .addform select{
        margin: 8px 0;
